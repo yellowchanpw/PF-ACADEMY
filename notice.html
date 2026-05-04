@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/enhancements.css" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -61,15 +62,46 @@
   <section class="page-hero">
     <div class="container">
       <p class="breadcrumb">NOVAEDU / 공지사항</p>
-      <h1>학원 운영 공지와 상담 안내</h1>
-      <p>실제 제작 시 학원 공지, 설명회, 시험 대비 일정, 휴원 안내 등을 등록하는 페이지로 사용할 수 있습니다.</p>
+      <h1>공지사항·설명회·차량 안내 게시판</h1>
+      <p>공지 페이지를 필터, 검색, 고정 공지, 카드형 목록, 안내 배너가 있는 게시판 형태로 확장했습니다.</p>
     </div>
   </section>
+
   <section class="section">
-    <div class="container notice-list">
-      <article class="notice-card"><span class="notice-meta">NOTICE 01</span><h3>신규 체험수업 신청 안내</h3><p>A/B/C 캠퍼스별 체험수업 가능 시간은 상담 후 개별 안내됩니다.</p></article>
-      <article class="notice-card"><span class="notice-meta">NOTICE 02</span><h3>중등 내신 대비반 모집</h3><p>학교별 시험 범위에 맞춰 개념 정리, 유형 풀이, 오답 확인을 진행합니다.</p></article>
-      <article class="notice-card"><span class="notice-meta">NOTICE 03</span><h3>차량 시간표 확인 안내</h3><p>상단 VEHICLE TIME 메뉴에서 각 캠퍼스별 차량 시간표를 확인할 수 있습니다.</p></article>
+    <div class="container">
+      <div class="notice-tools">
+        <div class="notice-search"><label for="noticeSearch">공지 검색</label><input type="search" id="noticeSearch" placeholder="예: 체험수업, 차량, 내신" /></div>
+        <div class="notice-filter" aria-label="공지 카테고리 필터">
+          <button type="button" class="notice-filter-button is-active" data-notice-filter="all">전체</button>
+          <button type="button" class="notice-filter-button" data-notice-filter="class">수업</button>
+          <button type="button" class="notice-filter-button" data-notice-filter="consult">상담</button>
+          <button type="button" class="notice-filter-button" data-notice-filter="vehicle">차량</button>
+          <button type="button" class="notice-filter-button" data-notice-filter="event">행사</button>
+        </div>
+      </div>
+
+      <div class="pinned-notice">
+        <div><span class="notice-meta">PINNED</span><h2>5월 학습 점검 주간 운영 안내</h2><p>신규 상담 학생은 체험수업 전 간단한 학습 습관 체크와 과목별 취약 단원 점검을 받을 수 있습니다.</p></div>
+        <a href="schedule.html" class="btn btn-primary">일정표 확인</a>
+      </div>
+
+      <div class="notice-board-grid" id="noticeBoard">
+        <article class="notice-card rich-notice" data-notice-card data-category="consult" data-title="신규 체험수업 신청 안내"><span class="notice-badge consult">상담</span><time>2026.05.02</time><h3>신규 체험수업 신청 안내</h3><p>A/B/C 캠퍼스별 체험수업 가능 시간은 상담 후 개별 안내됩니다.</p><a href="index.html#trial">신청 폼으로 이동</a></article>
+        <article class="notice-card rich-notice" data-notice-card data-category="class" data-title="중등 내신 대비반 모집"><span class="notice-badge class">수업</span><time>2026.05.04</time><h3>중등 내신 대비반 모집</h3><p>학교별 시험 범위에 맞춰 개념 정리, 유형 풀이, 오답 확인을 진행합니다.</p><a href="schedule.html">시험 일정 보기</a></article>
+        <article class="notice-card rich-notice" data-notice-card data-category="vehicle" data-title="차량 시간표 확인 안내"><span class="notice-badge vehicle">차량</span><time>2026.05.06</time><h3>차량 시간표 확인 안내</h3><p>상단 VEHICLE TIME 메뉴에서 각 캠퍼스별 차량 시간표를 확인할 수 있습니다.</p><a href="vehicle-a.html">차량표 보기</a></article>
+        <article class="notice-card rich-notice" data-notice-card data-category="event" data-title="방학 특강 설명회"><span class="notice-badge event">행사</span><time>2026.05.12</time><h3>방학 특강 설명회</h3><p>선행, 심화, 오답 클리닉 특강의 대상과 시간표를 안내하는 설명회입니다.</p><a href="schedule.html">설명회 날짜 보기</a></article>
+        <article class="notice-card rich-notice" data-notice-card data-category="class" data-title="초등 독해 습관반 오픈"><span class="notice-badge class">수업</span><time>2026.05.15</time><h3>초등 독해 습관반 오픈</h3><p>긴 지문 읽기, 핵심어 표시, 문장 요약 훈련을 중심으로 운영합니다.</p><a href="campus-a.html">A CAMPUS 보기</a></article>
+        <article class="notice-card rich-notice" data-notice-card data-category="consult" data-title="월간 학부모 상담 주간"><span class="notice-badge consult">상담</span><time>2026.05.19</time><h3>월간 학부모 상담 주간</h3><p>학습 리포트와 오답 분석을 바탕으로 다음 달 학습 방향을 안내합니다.</p><a href="index.html#trial">상담 신청</a></article>
+      </div>
+      <p class="notice-empty" id="noticeEmpty">검색 조건에 맞는 공지가 없습니다.</p>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="container notice-guide-grid">
+      <article><span>01</span><h3>공지 등록 영역</h3><p>실제 제작 시 관리자 페이지에서 제목, 카테고리, 작성일, 상세 내용을 등록하도록 확장할 수 있습니다.</p></article>
+      <article><span>02</span><h3>고정 공지</h3><p>설명회, 휴원, 차량 변경처럼 중요한 안내는 상단 배너에 고정 노출합니다.</p></article>
+      <article><span>03</span><h3>카테고리 필터</h3><p>수업, 상담, 차량, 행사처럼 학부모가 찾는 정보를 빠르게 분류합니다.</p></article>
     </div>
   </section>
 </main>
@@ -94,5 +126,6 @@
   <script src="assets/js/accordion.js"></script>
   <script src="assets/js/form.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhancements.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/enhancements.css" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -61,20 +62,110 @@
   <section class="page-hero">
     <div class="container">
       <p class="breadcrumb">NOVAEDU / 일정표</p>
-      <h1>월간 수업 및 상담 일정표</h1>
-      <p>시험 대비, 보강, 체험수업, 학부모 상담 일정을 한눈에 보여주는 샘플 페이지입니다.</p>
+      <h1>월간 수업·상담·시험 대비 캘린더</h1>
+      <p>기존 표 형태 일정표에 월간 달력, 일정 상세 패널, 캠퍼스별 주간 시간표, 시험 대비 타임라인을 추가했습니다.</p>
     </div>
   </section>
+
   <section class="section">
     <div class="container">
-      <table class="calendar-table">
-        <thead><tr><th>구분</th><th>일정</th><th>안내</th></tr></thead>
-        <tbody>
-          <tr><td>체험수업</td><td>매주 화·목</td><td>상담 신청 후 학년별 가능 시간으로 조율합니다.</td></tr>
-          <tr><td>내신 대비</td><td>시험 4주 전</td><td>학교별 시험 범위에 맞춰 별도 관리합니다.</td></tr>
-          <tr><td>학부모 상담</td><td>매월 마지막 주</td><td>학습 리포트를 바탕으로 성장 포인트를 안내합니다.</td></tr>
-        </tbody>
-      </table>
+      <div class="schedule-summary-grid">
+        <article><span>이번 달 핵심</span><strong>중등 내신 4주 집중</strong><p>학교별 범위 확인 → 유형 풀이 → 오답 보완</p></article>
+        <article><span>체험수업</span><strong>화·목·토</strong><p>신청 후 학년과 캠퍼스에 맞춰 개별 조율</p></article>
+        <article><span>학부모 상담</span><strong>5월 19–23일</strong><p>월간 리포트 기반 상담 주간</p></article>
+        <article><span>특강 안내</span><strong>5월 29일</strong><p>방학 선행·심화 특강 설명회</p></article>
+      </div>
+
+      <div class="calendar-layout">
+        <div class="calendar-main">
+          <div class="calendar-toolbar">
+            <div><p class="eyebrow">May Calendar</p><h2>2026년 5월 운영 캘린더</h2></div>
+            <div class="calendar-legend"><span class="legend trial">체험</span><span class="legend exam">내신</span><span class="legend consult">상담</span><span class="legend event">행사</span></div>
+          </div>
+          <div class="calendar-shell" role="grid" aria-label="2026년 5월 노바에듀 일정표">
+            <div class="calendar-weekdays"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+            <div class="calendar-grid">
+              <div class="calendar-day muted"><b>26</b></div><div class="calendar-day muted"><b>27</b></div><div class="calendar-day muted"><b>28</b></div><div class="calendar-day muted"><b>29</b></div><div class="calendar-day muted"><b>30</b></div>
+              <div class="calendar-day"><b>1</b><button type="button" class="calendar-event event" data-date="5월 1일" data-title="근로자의 날 휴원 안내" data-desc="정규 수업은 휴강이며, 보강 일정은 캠퍼스별로 별도 안내됩니다.">휴원</button></div>
+              <div class="calendar-day"><b>2</b><button type="button" class="calendar-event trial" data-date="5월 2일" data-title="토요 체험수업" data-desc="초등·중등 신규 상담 학생 대상 체험수업 샘플 일정입니다.">체험수업</button></div>
+              <div class="calendar-day"><b>3</b></div>
+              <div class="calendar-day today"><b>4</b><button type="button" class="calendar-event exam" data-date="5월 4일" data-title="중등 내신 1차 점검" data-desc="학교별 시험 범위와 단원별 취약도를 확인합니다.">내신 점검</button></div>
+              <div class="calendar-day"><b>5</b><button type="button" class="calendar-event event" data-date="5월 5일" data-title="어린이날 휴원" data-desc="휴원일이며 보강 대상 학생에게 개별 안내가 진행됩니다.">휴원</button></div>
+              <div class="calendar-day"><b>6</b></div>
+              <div class="calendar-day"><b>7</b><button type="button" class="calendar-event trial" data-date="5월 7일" data-title="초등 체험수업" data-desc="기초 개념반, 독해 습관반 체험이 가능한 샘플 일정입니다.">초등 체험</button></div>
+              <div class="calendar-day"><b>8</b></div>
+              <div class="calendar-day"><b>9</b><button type="button" class="calendar-event exam" data-date="5월 9일" data-title="토요 오답 클리닉" data-desc="중등 수학 오답 재풀이와 서술형 풀이 점검을 진행합니다.">오답 클리닉</button></div>
+              <div class="calendar-day"><b>10</b></div>
+              <div class="calendar-day"><b>11</b><button type="button" class="calendar-event consult" data-date="5월 11일" data-title="월간 리포트 발송" data-desc="학생별 과제 수행률, 오답 유형, 다음 목표를 정리해 공유합니다.">리포트</button></div>
+              <div class="calendar-day"><b>12</b></div>
+              <div class="calendar-day"><b>13</b></div>
+              <div class="calendar-day"><b>14</b><button type="button" class="calendar-event exam" data-date="5월 14일" data-title="영어 어휘 테스트" data-desc="중등 내신 대비 어휘 누적 테스트와 미통과자 보강을 진행합니다.">어휘 테스트</button></div>
+              <div class="calendar-day"><b>15</b></div>
+              <div class="calendar-day"><b>16</b><button type="button" class="calendar-event trial" data-date="5월 16일" data-title="토요 상담 데이" data-desc="방문 상담과 체험수업을 같은 날 진행할 수 있는 샘플 일정입니다.">상담 데이</button></div>
+              <div class="calendar-day"><b>17</b></div>
+              <div class="calendar-day"><b>18</b><button type="button" class="calendar-event exam" data-date="5월 18일" data-title="시험 2주 전 집중관리" data-desc="학교별 예상 문제 풀이와 취약 유형 보완을 시작합니다.">집중관리</button></div>
+              <div class="calendar-day"><b>19</b><button type="button" class="calendar-event consult" data-date="5월 19일" data-title="학부모 상담 주간 시작" data-desc="월간 리포트를 바탕으로 전화·방문·카카오 상담을 조율합니다.">상담 주간</button></div>
+              <div class="calendar-day"><b>20</b></div>
+              <div class="calendar-day"><b>21</b><button type="button" class="calendar-event exam" data-date="5월 21일" data-title="내신 실전 모의고사" data-desc="시간 제한을 두고 실전 문제를 풀어보고 오답을 정리합니다.">모의고사</button></div>
+              <div class="calendar-day"><b>22</b><button type="button" class="calendar-event consult" data-date="5월 22일" data-title="상담 주간 마감" data-desc="상담 후 다음 달 학습 계획과 보강 일정을 정리합니다.">상담 마감</button></div>
+              <div class="calendar-day"><b>23</b></div>
+              <div class="calendar-day"><b>24</b></div>
+              <div class="calendar-day"><b>25</b></div>
+              <div class="calendar-day"><b>26</b><button type="button" class="calendar-event event" data-date="5월 26일" data-title="차량 노선 확인" data-desc="캠퍼스별 차량 탑승 장소와 시간 변경 여부를 확인합니다.">차량 확인</button></div>
+              <div class="calendar-day"><b>27</b></div>
+              <div class="calendar-day"><b>28</b><button type="button" class="calendar-event trial" data-date="5월 28일" data-title="중등 체험수업" data-desc="내신 관리반 수업 방식과 오답 관리 흐름을 체험합니다.">중등 체험</button></div>
+              <div class="calendar-day"><b>29</b><button type="button" class="calendar-event event" data-date="5월 29일" data-title="방학 특강 설명회" data-desc="선행·심화·클리닉 특강 구성과 수강 대상을 안내합니다.">설명회</button></div>
+              <div class="calendar-day"><b>30</b><button type="button" class="calendar-event exam" data-date="5월 30일" data-title="토요 보강" data-desc="미완료 과제와 오답 재풀이를 보완하는 토요 보강입니다.">보강</button></div>
+              <div class="calendar-day"><b>31</b></div>
+            </div>
+          </div>
+        </div>
+        <aside class="calendar-detail" id="calendarDetail">
+          <span>선택 일정</span>
+          <h3>달력의 일정을 클릭해보세요.</h3>
+          <p>체험수업, 내신관리, 상담, 행사 일정을 클릭하면 이 영역에 상세 안내가 표시됩니다.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Weekly Timetable</p>
+        <h2>캠퍼스별 주간 시간표</h2>
+        <p>탭을 눌러 A/B/C 캠퍼스의 대표 운영 시간표를 전환할 수 있습니다.</p>
+      </div>
+      <div class="tab-buttons" aria-label="캠퍼스 시간표 선택">
+        <button type="button" class="js-tab-button is-active" data-tab-group="schedule" data-tab-target="schedule-a">A CAMPUS</button>
+        <button type="button" class="js-tab-button" data-tab-group="schedule" data-tab-target="schedule-b">B CAMPUS</button>
+        <button type="button" class="js-tab-button" data-tab-group="schedule" data-tab-target="schedule-c">C CAMPUS</button>
+      </div>
+      <div class="tab-panel is-active" data-tab-group="schedule" data-tab-panel="schedule-a">
+        <table class="calendar-table rich-table"><thead><tr><th>요일</th><th>초등 기초</th><th>독해·어휘</th><th>클리닉</th></tr></thead><tbody><tr><td>월·수</td><td>16:00–17:30</td><td>17:40–18:40</td><td>18:50–19:20</td></tr><tr><td>화·목</td><td>17:00–18:30</td><td>18:40–19:30</td><td>19:40–20:10</td></tr><tr><td>토</td><td>10:00–11:30</td><td>11:40–12:30</td><td>12:40–13:10</td></tr></tbody></table>
+      </div>
+      <div class="tab-panel" data-tab-group="schedule" data-tab-panel="schedule-b">
+        <table class="calendar-table rich-table"><thead><tr><th>요일</th><th>중1</th><th>중2</th><th>중3</th></tr></thead><tbody><tr><td>월·수·금</td><td>18:00–19:30</td><td>19:40–21:10</td><td>20:00–21:50</td></tr><tr><td>화·목</td><td>18:30–20:00</td><td>19:00–20:30</td><td>20:30–22:00</td></tr><tr><td>토</td><td>10:00–12:00</td><td>12:30–14:30</td><td>15:00–17:00</td></tr></tbody></table>
+      </div>
+      <div class="tab-panel" data-tab-group="schedule" data-tab-panel="schedule-c">
+        <table class="calendar-table rich-table"><thead><tr><th>구분</th><th>심화 수학</th><th>서술형 영어</th><th>특강/보강</th></tr></thead><tbody><tr><td>평일</td><td>19:00–20:40</td><td>20:50–22:00</td><td>상담 후 조율</td></tr><tr><td>금</td><td>18:30–20:30</td><td>20:40–21:50</td><td>오답 클리닉</td></tr><tr><td>토</td><td>10:00–12:30</td><td>13:00–15:00</td><td>15:20–16:30</td></tr></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Exam Countdown</p>
+        <h2>시험 대비 4주 로드맵</h2>
+        <p>일정표 하단에는 시험 대비 흐름을 한눈에 볼 수 있는 타임라인을 추가했습니다.</p>
+      </div>
+      <ol class="timeline-roadmap">
+        <li><span>4주 전</span><strong>범위 확인</strong><p>학교별 시험 범위와 교과서·프린트 자료를 정리합니다.</p></li>
+        <li><span>3주 전</span><strong>개념 재정리</strong><p>취약 단원을 다시 설명하고 기본 유형을 확인합니다.</p></li>
+        <li><span>2주 전</span><strong>실전 문제</strong><p>학교별 빈출 유형과 서술형 문제를 집중 풀이합니다.</p></li>
+        <li><span>1주 전</span><strong>오답 압축</strong><p>반복 실수 문항만 모아 시험 직전까지 관리합니다.</p></li>
+      </ol>
     </div>
   </section>
 </main>
@@ -99,5 +190,6 @@
   <script src="assets/js/accordion.js"></script>
   <script src="assets/js/form.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhancements.js"></script>
 </body>
 </html>

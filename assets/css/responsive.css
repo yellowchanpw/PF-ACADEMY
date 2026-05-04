@@ -135,19 +135,16 @@
   .hero {
     min-height: calc(100vh - var(--header-height));
     padding: 84px 0;
-    background-position: 58% center;
+    background-position: center center;
   }
 
   .hero-content h1 {
-    font-size: clamp(38px, 12vw, 54px);
-  }
-
-  .hero-description {
-    font-size: 16px;
+    font-size: clamp(54px, 17vw, 92px);
+    letter-spacing: 0.04em;
   }
 
   .hero-actions .btn {
-    width: 100%;
+    width: min(100%, 260px);
   }
 
   .hero-trust,
@@ -200,7 +197,7 @@
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 36px;
+    font-size: clamp(46px, 16vw, 68px);
   }
 
   .section-heading {
@@ -221,3 +218,4 @@
     gap: 4px;
   }
 }
+

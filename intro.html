@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/pages.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/enhancements.css" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -58,18 +59,98 @@
   </div>
 </header>
 <main>
-  <section class="page-hero">
+  <section class="page-hero page-hero-deep">
     <div class="container">
       <p class="breadcrumb">NOVAEDU / 소개</p>
-      <h1>노바에듀는 공부가 이어지는 구조를 설계합니다.</h1>
-      <p>학생별 학습 상태를 진단하고 수업, 오답, 과제, 피드백까지 관리하는 초·중등 교육센터 샘플 페이지입니다.</p>
+      <h1>노바에듀는 수업 전·중·후가 이어지는 학습 구조를 설계합니다.</h1>
+      <p>진단 상담, 수업, 오답, 과제, 피드백, 학부모 상담까지 한 화면에서 이해할 수 있도록 소개 페이지를 시각 콘텐츠 중심으로 확장했습니다.</p>
     </div>
   </section>
+
   <section class="section">
-    <div class="container page-card-grid">
-      <article class="page-card"><h3>학습 진단</h3><p>입학 전 상담을 통해 학년, 과목별 어려움, 학습 습관을 확인합니다.</p></article>
-      <article class="page-card"><h3>관리형 수업</h3><p>반별 정원을 제한하고 학생별 과제 수행과 오답 유형을 점검합니다.</p></article>
-      <article class="page-card"><h3>학부모 피드백</h3><p>주간·월간 리포트를 통해 아이의 변화와 보완 방향을 공유합니다.</p></article>
+    <div class="container intro-overview-grid">
+      <article class="intro-story-card">
+        <p class="eyebrow">Brand Story</p>
+        <h2>“많이 풀기”보다 “왜 틀렸는지 아는 것”에 집중합니다.</h2>
+        <p>노바에듀의 핵심은 학생이 수업 시간에 배운 내용을 집에서도 이어갈 수 있게 만드는 관리 시스템입니다. 학생별 학습 상태를 기록하고, 같은 실수가 반복되는 지점을 확인하며, 학부모에게 이해하기 쉬운 언어로 전달합니다.</p>
+        <div class="story-stat-row">
+          <div><strong>4단계</strong><span>진단–수업–오답–피드백</span></div>
+          <div><strong>3개</strong><span>캠퍼스별 특화 운영</span></div>
+          <div><strong>1:1</strong><span>상담 기반 반 배정</span></div>
+        </div>
+      </article>
+      <div class="academy-map-card" aria-label="학원 공간 구성 시각화">
+        <div class="floor-title">NOVAEDU SPACE MAP</div>
+        <div class="floor-grid">
+          <span class="room room-large">개념 강의실</span>
+          <span class="room">오답 클리닉</span>
+          <span class="room">상담실</span>
+          <span class="room">자습존</span>
+          <span class="room room-wide">테스트 & 리포트 데스크</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="container">
+      <div class="section-heading center">
+        <p class="eyebrow">Learning Loop</p>
+        <h2>학생이 학습을 이어가게 만드는 순환 구조</h2>
+        <p>소개 페이지에 단순 문단 대신 학습관리 흐름을 시각화한 루프형 콘텐츠를 넣었습니다.</p>
+      </div>
+      <div class="learning-loop-grid">
+        <article><span>01</span><strong>진단</strong><p>학년, 과목, 학교 진도, 습관을 확인합니다.</p></article>
+        <article><span>02</span><strong>수업</strong><p>개념 이해도에 따라 설명 방식과 과제량을 조절합니다.</p></article>
+        <article><span>03</span><strong>오답</strong><p>반복되는 실수를 유형별로 표시하고 다시 풉니다.</p></article>
+        <article><span>04</span><strong>피드백</strong><p>학생과 학부모에게 다음 목표를 안내합니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container report-preview-grid">
+      <div>
+        <p class="eyebrow">Management Dashboard</p>
+        <h2>관리형 학원의 이미지를 보여주는 대시보드</h2>
+        <p class="lead-text">실제 사이트에서는 관리자 화면, 학생별 리포트, 출결 데이터와 연결할 수 있습니다. 현재는 포트폴리오용 정적 UI로 구성했습니다.</p>
+        <ul class="check-list"><li>수업 참여도와 과제 수행률 표시</li><li>오답 유형별 반복 횟수 체크</li><li>상담 메모와 다음 목표 정리</li></ul>
+      </div>
+      <article class="report-card-large">
+        <div class="report-card-header"><strong>학생별 관리 카드</strong><span>Preview</span></div>
+        <div class="student-score-grid">
+          <div><b>출석</b><strong>98%</strong></div>
+          <div><b>과제</b><strong>92%</strong></div>
+          <div><b>오답</b><strong>78%</strong></div>
+          <div><b>상담</b><strong>월 1회</strong></div>
+        </div>
+        <div class="progress-row"><span>개념 이해</span><div class="progress-track"><i style="width: 84%"></i></div><em>84%</em></div>
+        <div class="progress-row"><span>실전 적용</span><div class="progress-track"><i style="width: 71%"></i></div><em>71%</em></div>
+        <div class="progress-row"><span>학습 루틴</span><div class="progress-track"><i style="width: 89%"></i></div><em>89%</em></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Classroom Culture</p>
+        <h2>교실 운영 원칙</h2>
+        <p>학원의 분위기와 운영 철학을 카드형 콘텐츠로 구성했습니다.</p>
+      </div>
+      <div class="culture-grid">
+        <article><span>01</span><h3>수업 전 준비</h3><p>지난 수업 오답과 과제 수행 상태를 확인한 뒤 수업을 시작합니다.</p></article>
+        <article><span>02</span><h3>질문이 쉬운 분위기</h3><p>모르는 지점을 빠르게 말할 수 있도록 짧은 체크 질문을 자주 사용합니다.</p></article>
+        <article><span>03</span><h3>과제는 양보다 지속성</h3><p>무리한 숙제보다 매일 이어지는 분량으로 루틴을 만듭니다.</p></article>
+        <article><span>04</span><h3>학부모와 같은 방향</h3><p>점수만 전달하지 않고 공부 습관과 다음 액션까지 공유합니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band-section">
+    <div class="container cta-band">
+      <div><p class="eyebrow">Start</p><h2>우리 아이에게 맞는 캠퍼스와 반을 상담해보세요.</h2><p>상담 신청 후 학년, 학교, 과목 고민을 바탕으로 적합한 수업 흐름을 안내합니다.</p></div>
+      <a href="index.html#trial" class="btn btn-primary">상담 신청하기</a>
     </div>
   </section>
 </main>
@@ -94,5 +175,6 @@
   <script src="assets/js/accordion.js"></script>
   <script src="assets/js/form.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enhancements.js"></script>
 </body>
 </html>
