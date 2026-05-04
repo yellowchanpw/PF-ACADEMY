@@ -1,0 +1,15 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-soft: #eaf1ff;
+  --text: #111827;
+  --muted: #64748b;
+  --line: #e5e7eb;
+  --bg: #ffffff;
+  --soft-bg: #f6f8fb;
+  --card: #ffffff;
+  --kakao: #fee500;
+  --kakao-text: #1f2937;
+  --header-height: 84px;
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+}

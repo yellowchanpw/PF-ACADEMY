@@ -1,0 +1,223 @@
+@media (max-width: 1120px) {
+  .main-nav {
+    gap: 22px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .wide-process-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .two-column,
+  .trial-grid,
+  .location-grid,
+  .campus-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-card-grid,
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .site-header,
+  .header-inner {
+    height: var(--header-height);
+  }
+
+  .logo-image {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logo-text strong {
+    font-size: 17px;
+  }
+
+  .logo-text small {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 14px;
+    border-bottom: 1px solid var(--line);
+    background: #ffffff;
+    box-shadow: var(--shadow);
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-trigger {
+    width: 100%;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 12px;
+  }
+
+  .nav-trigger::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    min-width: 0;
+    display: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: none;
+    border: 0;
+    padding: 0 0 8px 12px;
+    background: #f8fafc;
+  }
+
+  .dropdown-menu::before {
+    display: none;
+  }
+
+  .nav-item:hover .dropdown-menu,
+  .nav-item:focus-within .dropdown-menu {
+    transform: none;
+  }
+
+  .nav-item.open .dropdown-menu {
+    display: block;
+  }
+
+  .nav-item.open .nav-trigger {
+    background: var(--primary-soft);
+    color: var(--primary);
+  }
+
+  .hero {
+    min-height: calc(100vh - var(--header-height));
+    padding: 84px 0;
+    background-position: 58% center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(38px, 12vw, 54px);
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-trust,
+  .about-grid,
+  .feature-list,
+  .curriculum-grid,
+  .teacher-grid,
+  .schedule-grid,
+  .review-grid,
+  .page-card-grid,
+  .vehicle-grid,
+  .form-grid.two-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-process-list,
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .consult-form {
+    padding: 22px;
+  }
+
+  .map-placeholder {
+    min-height: 320px;
+  }
+
+  .floating-contact {
+    right: 14px;
+    bottom: 14px;
+    width: 180px;
+  }
+
+  .floating-contact a {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .site-footer {
+    padding-bottom: 128px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2,
+  .two-column h2,
+  .trial-copy h2,
+  .location-grid h2,
+  .page-hero h1 {
+    font-size: 30px;
+  }
+
+  .schedule-card dl div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

@@ -1,0 +1,280 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  font-weight: 900;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: var(--primary);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.24);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  color: var(--primary);
+  background: #ffffff;
+  border-color: #c7d7fe;
+}
+
+.btn-kakao {
+  color: var(--kakao-text);
+  background: var(--kakao);
+  border-color: var(--kakao);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.info-card,
+.curriculum-card,
+.teacher-card,
+.schedule-card,
+.review-card,
+.contact-card,
+.consult-form,
+.step-card,
+.feature-item,
+.notice-card,
+.campus-panel,
+.vehicle-card,
+.page-card,
+.notice-box,
+.faq-item {
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
+}
+
+.info-card,
+.curriculum-card,
+.schedule-card,
+.review-card,
+.step-card,
+.feature-item,
+.notice-card,
+.page-card,
+.vehicle-card {
+  padding: 26px;
+}
+
+.card-number,
+.step-card span,
+.notice-meta {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--primary);
+  font-weight: 950;
+  letter-spacing: 0.04em;
+}
+
+.info-card h3,
+.curriculum-card h3,
+.schedule-card h3,
+.teacher-info h3,
+.step-card h3,
+.feature-item strong,
+.page-card h3,
+.vehicle-card h3,
+.notice-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.info-card p,
+.curriculum-card p,
+.schedule-card p,
+.teacher-info p,
+.review-card p,
+.step-card p,
+.feature-item p,
+.page-card p,
+.vehicle-card p,
+.notice-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-box {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 900;
+  text-align: center;
+  overflow: hidden;
+}
+
+.placeholder-box.small {
+  min-height: 140px;
+  margin-bottom: 20px;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 22px;
+  border: 0;
+  background: #ffffff;
+  color: var(--text);
+  text-align: left;
+  font-weight: 950;
+}
+
+.faq-question span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  background: var(--primary-soft);
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--muted);
+}
+
+.faq-item.open .faq-answer {
+  max-height: 260px;
+}
+
+/* Floating contact */
+.floating-contact {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 2000;
+  display: grid;
+  gap: 10px;
+  width: 190px;
+}
+
+.floating-contact a {
+  min-height: 52px;
+  display: grid;
+  place-items: center;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 950;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.16);
+}
+
+.floating-kakao {
+  color: var(--kakao-text);
+  background: var(--kakao);
+}
+
+.floating-trial {
+  color: var(--primary);
+  background: #ffffff;
+  border-color: #bfdbfe !important;
+}
+
+/* Forms */
+.form-grid.two-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row {
+  margin-bottom: 18px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 13px 14px;
+  color: var(--text);
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-row textarea {
+  resize: vertical;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 4px 0 22px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.checkbox-row input {
+  margin-top: 5px;
+}
+
+.form-message {
+  min-height: 24px;
+  margin: 14px 0 0;
+  font-weight: 900;
+}
+
+.form-message.success {
+  color: #047857;
+}
+
+.form-message.error {
+  color: #dc2626;
+}

@@ -3,631 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>서림에듀학원 | 초·중등 영어·수학 상담 신청형 홈페이지</title>
-  <meta
-    name="description"
-    content="서림에듀학원은 초·중등 학생을 위한 영어·수학 전문 학원입니다. 체험수업 신청, 전화 상담, 카카오 상담, 위치 안내를 제공합니다."
-  />
-
-  <link rel="stylesheet" href="style.css" />
+  <title>노바에듀 | 초·중등 영어·수학 상담 신청형 홈페이지</title>
+  <meta name="description" content="노바에듀는 초·중등 학생을 위한 상담 신청형 학원 홈페이지 샘플입니다. 체험수업 신청, 카카오 상담, 캠퍼스 안내, 차량 시간표를 제공합니다." />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="logo" aria-label="서림에듀학원 홈으로 이동">
-        <span class="logo-mark">S</span>
-        <span class="logo-text">
-          <strong>서림에듀학원</strong>
-          <small>초·중등 영어·수학</small>
-        </span>
-      </a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="노바에듀 홈으로 이동">
+      <img src="assets/images/logo.png" alt="노바에듀 로고" class="logo-image" />
+      <span class="logo-text">
+        <strong>NOVAEDU</strong>
+        <small>관리형 초·중등 교육센터</small>
+      </span>
+    </a>
 
-      <button class="mobile-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <button class="mobile-menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-      <nav class="main-nav" aria-label="주요 메뉴">
-        <a href="#about">학원소개</a>
-        <a href="#curriculum">커리큘럼</a>
-        <a href="#teachers">강사진</a>
-        <a href="#schedule">시간표</a>
-        <a href="#reviews">후기</a>
-        <a href="#trial">체험신청</a>
-        <a href="#location">위치</a>
-      </nav>
-
-      <a href="#trial" class="header-cta">상담 신청</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- 1. Hero -->
-    <section class="hero section" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">초·중등 영어·수학 전문 관리형 학원</p>
-          <h1>
-            성적보다 먼저,<br />
-            <span>공부하는 습관</span>을 만듭니다.
-          </h1>
-          <p class="hero-description">
-            서림에듀학원은 아이의 현재 학습 상태를 먼저 진단하고,
-            수업·오답관리·학부모 피드백까지 연결해 꾸준한 성장을 돕습니다.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#trial" class="btn btn-primary">체험수업 신청하기</a>
-            <button type="button" class="btn btn-outline js-phone-button">전화 상담하기</button>
-          </div>
-
-          <div class="hero-trust">
-            <div>
-              <strong>소수정원</strong>
-              <span>학생별 학습관리</span>
-            </div>
-            <div>
-              <strong>주간 피드백</strong>
-              <span>학부모 상담 연계</span>
-            </div>
-            <div>
-              <strong>진단 기반</strong>
-              <span>수준별 반 배정</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card" aria-label="상담 진행 흐름">
-          <div class="hero-card-header">
-            <span>상담 진행 과정</span>
-            <strong>3단계 학습 진단</strong>
-          </div>
-
-          <ol class="process-list">
-            <li>
-              <span>01</span>
-              <div>
-                <strong>학습 상태 확인</strong>
-                <p>현재 학년, 과목별 어려움, 학습 습관을 확인합니다.</p>
-              </div>
-            </li>
-            <li>
-              <span>02</span>
-              <div>
-                <strong>수준별 체험수업</strong>
-                <p>아이에게 맞는 반과 수업 방식을 직접 경험합니다.</p>
-              </div>
-            </li>
-            <li>
-              <span>03</span>
-              <div>
-                <strong>개별 학습 방향 제안</strong>
-                <p>진도, 오답관리, 상담 주기를 안내합니다.</p>
-              </div>
-            </li>
-          </ol>
-
-          <div class="hero-card-note">
-            체험수업 후 등록 여부를 충분히 상의하실 수 있습니다.
-          </div>
+    <nav class="main-nav" aria-label="주요 메뉴">
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button" aria-expanded="false">NOVAEDU</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="intro.html">소개</a>
+          <a href="notice.html">공지사항</a>
+          <a href="schedule.html">일정표</a>
         </div>
       </div>
-    </section>
-
-    <!-- 2. About -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">About Seorim Edu</p>
-          <h2>아이의 학습 흐름을 함께 관리하는 동네 학원</h2>
-          <p>
-            서림에듀학원은 단순히 문제를 많이 푸는 학원이 아니라,
-            아이가 왜 막히는지 확인하고 스스로 공부하는 방법을 익히도록 돕는 학원입니다.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <article class="info-card">
-            <span class="card-number">01</span>
-            <h3>소수정원 수업</h3>
-            <p>
-              학생별 이해도와 과제 수행 상태를 확인할 수 있도록
-              반별 정원을 제한해 운영합니다.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <span class="card-number">02</span>
-            <h3>학부모 피드백</h3>
-            <p>
-              수업 태도, 오답 유형, 과제 수행률을 정리해
-              정기적으로 학부모님께 공유합니다.
-            </p>
-          </article>
-
-          <article class="info-card">
-            <span class="card-number">03</span>
-            <h3>기초부터 내신까지</h3>
-            <p>
-              초등 기초 개념부터 중등 내신 대비까지
-              학년별 목표에 맞춘 커리큘럼을 제공합니다.
-            </p>
-          </article>
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button" aria-expanded="false">CAMPUS</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="campus-a.html">A CAMPUS</a>
+          <a href="campus-b.html">B CAMPUS</a>
+          <a href="campus-c.html">C CAMPUS</a>
         </div>
       </div>
-    </section>
-
-    <!-- 3. Philosophy -->
-    <section class="section soft-section" id="philosophy">
-      <div class="container two-column">
-        <div>
-          <p class="eyebrow">Our Difference</p>
-          <h2>같은 진도보다 중요한 것은 아이에게 맞는 방향입니다.</h2>
-          <p class="lead-text">
-            아이마다 어려워하는 단원, 집중이 흐트러지는 순간, 숙제를 미루는 이유가 다릅니다.
-            서림에듀는 수업 전후의 학습 데이터를 바탕으로 아이에게 맞는 관리 방식을 제안합니다.
-          </p>
-          <a href="#trial" class="btn btn-primary">우리 아이 상담 신청</a>
-        </div>
-
-        <div class="feature-list">
-          <div class="feature-item">
-            <strong>입학 전 진단</strong>
-            <p>학년, 과목, 학습 습관을 확인해 적합한 반을 안내합니다.</p>
-          </div>
-          <div class="feature-item">
-            <strong>수업 후 오답관리</strong>
-            <p>틀린 문제를 유형별로 정리하고 다시 풀 수 있도록 관리합니다.</p>
-          </div>
-          <div class="feature-item">
-            <strong>월별 성장 피드백</strong>
-            <p>학습 태도와 성취도를 학부모님께 이해하기 쉽게 전달합니다.</p>
-          </div>
-          <div class="feature-item">
-            <strong>상담 중심 운영</strong>
-            <p>등록 전후로 충분한 상담을 통해 학습 방향을 함께 결정합니다.</p>
-          </div>
+      <div class="nav-item has-dropdown">
+        <button class="nav-trigger" type="button" aria-expanded="false">VEHICLE TIME</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="vehicle-a.html">A CAMPUS</a>
+          <a href="vehicle-b.html">B CAMPUS</a>
+          <a href="vehicle-c.html">C CAMPUS</a>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- 4. Curriculum -->
-    <section class="section" id="curriculum">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Curriculum</p>
-          <h2>학년과 수준에 맞춘 영어·수학 커리큘럼</h2>
-          <p>
-            기초 개념을 잡는 수업부터 내신 실전 대비까지,
-            아이의 현재 위치에 맞게 수업 방향을 제안합니다.
-          </p>
-        </div>
-
-        <div class="curriculum-grid">
-          <article class="curriculum-card">
-            <div class="placeholder-box small">초등 기초반</div>
-            <h3>초등 기초 개념반</h3>
-            <p>
-              수학 개념 이해와 영어 문장 읽기의 기본기를 다지는 과정입니다.
-            </p>
-            <ul>
-              <li>연산·개념 정리</li>
-              <li>기본 문법과 독해</li>
-              <li>학습 습관 형성</li>
-            </ul>
-          </article>
-
-          <article class="curriculum-card">
-            <div class="placeholder-box small">초등 심화반</div>
-            <h3>초등 심화 사고반</h3>
-            <p>
-              응용 문제와 긴 지문 독해를 통해 중등 학습으로 자연스럽게 연결합니다.
-            </p>
-            <ul>
-              <li>응용 문제 풀이</li>
-              <li>문장 구조 이해</li>
-              <li>오답노트 훈련</li>
-            </ul>
-          </article>
-
-          <article class="curriculum-card">
-            <div class="placeholder-box small">중등 내신반</div>
-            <h3>중등 내신 관리반</h3>
-            <p>
-              학교별 진도와 시험 범위에 맞춰 개념, 유형, 실전 문제를 관리합니다.
-            </p>
-            <ul>
-              <li>학교별 시험 범위 분석</li>
-              <li>유형별 문제 풀이</li>
-              <li>시험 전 집중 관리</li>
-            </ul>
-          </article>
-
-          <article class="curriculum-card">
-            <div class="placeholder-box small">중등 실전반</div>
-            <h3>중등 실전 완성반</h3>
-            <p>
-              실수 패턴을 줄이고 서술형, 고난도 문제까지 대비하는 과정입니다.
-            </p>
-            <ul>
-              <li>서술형 대비</li>
-              <li>고난도 유형 훈련</li>
-              <li>개별 약점 보완</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Teachers -->
-    <section class="section soft-section" id="teachers">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Teachers</p>
-          <h2>아이의 변화를 함께 확인하는 강사진</h2>
-          <p>
-            서림에듀의 강사진은 수업 전달뿐 아니라 학생의 태도, 오답, 과제 흐름까지 함께 관리합니다.
-          </p>
-        </div>
-
-        <div class="teacher-grid">
-          <article class="teacher-card">
-            <div class="teacher-photo placeholder-box">강사 이미지</div>
-            <div class="teacher-info">
-              <span>수학 / 원장</span>
-              <h3>김서연 원장</h3>
-              <p>
-                개념 이해와 오답 습관 교정을 중심으로 학생별 학습 방향을 설계합니다.
-              </p>
-            </div>
-          </article>
-
-          <article class="teacher-card">
-            <div class="teacher-photo placeholder-box">강사 이미지</div>
-            <div class="teacher-info">
-              <span>영어 / 전임</span>
-              <h3>박지훈 선생님</h3>
-              <p>
-                문법, 독해, 어휘를 연결해 학교 시험과 실제 독해력을 함께 관리합니다.
-              </p>
-            </div>
-          </article>
-
-          <article class="teacher-card">
-            <div class="teacher-photo placeholder-box">강사 이미지</div>
-            <div class="teacher-info">
-              <span>학습코칭</span>
-              <h3>이하은 선생님</h3>
-              <p>
-                과제 수행, 오답노트, 학습 계획을 점검해 꾸준한 공부 습관을 돕습니다.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Schedule -->
-    <section class="section" id="schedule">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Class & Schedule</p>
-          <h2>수업 대상과 시간표</h2>
-          <p>
-            아래 시간표는 샘플 구성입니다. 실제 운영 시간은 상담 시 학생의 학년과 수준에 맞춰 안내됩니다.
-          </p>
-        </div>
-
-        <div class="schedule-grid">
-          <article class="schedule-card">
-            <h3>초등 4~6학년</h3>
-            <p>기초 개념, 연산, 독해 습관 중심</p>
-            <dl>
-              <div>
-                <dt>월·수</dt>
-                <dd>16:00 - 17:30</dd>
-              </div>
-              <div>
-                <dt>화·목</dt>
-                <dd>17:00 - 18:30</dd>
-              </div>
-            </dl>
-          </article>
-
-          <article class="schedule-card">
-            <h3>중등 1~2학년</h3>
-            <p>개념 정리, 학교 진도, 기본 내신 대비</p>
-            <dl>
-              <div>
-                <dt>월·수·금</dt>
-                <dd>18:00 - 19:30</dd>
-              </div>
-              <div>
-                <dt>화·목</dt>
-                <dd>19:00 - 20:30</dd>
-              </div>
-            </dl>
-          </article>
-
-          <article class="schedule-card">
-            <h3>중등 3학년</h3>
-            <p>내신 집중, 서술형, 실전 문제 관리</p>
-            <dl>
-              <div>
-                <dt>월·수·금</dt>
-                <dd>20:00 - 21:30</dd>
-              </div>
-              <div>
-                <dt>토요일</dt>
-                <dd>10:00 - 12:00</dd>
-              </div>
-            </dl>
-          </article>
-        </div>
-
-        <div class="notice-box">
-          <strong>안내</strong>
-          <p>
-            반 배정은 학년만으로 결정하지 않고, 진단 상담과 체험수업 결과를 함께 보고 안내합니다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. Reviews -->
-    <section class="section soft-section" id="reviews">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Reviews</p>
-          <h2>학부모 후기와 성장 사례</h2>
-          <p>
-            아래 후기는 포트폴리오용 샘플 문구입니다. 실제 사이트 제작 시 고객사의 실제 후기나 사례로 교체할 수 있습니다.
-          </p>
-        </div>
-
-        <div class="review-grid">
-          <article class="review-card">
-            <p>
-              “문제를 많이 푸는 것보다 어디서 자꾸 틀리는지 알려주셔서 좋았습니다.
-              아이도 오답노트를 어떻게 써야 하는지 조금씩 익히고 있어요.”
-            </p>
-            <strong>중1 학부모 A님</strong>
-          </article>
-
-          <article class="review-card">
-            <p>
-              “숙제를 미루는 편이었는데 주간 체크가 있으니 스스로 챙기는 횟수가 늘었습니다.
-              상담 때 아이 상태를 구체적으로 설명해주셔서 믿음이 갔습니다.”
-            </p>
-            <strong>초6 학부모 B님</strong>
-          </article>
-
-          <article class="review-card">
-            <p>
-              “시험 전에는 어떤 단원을 더 봐야 하는지 정리해주셔서 도움이 됐습니다.
-              단순히 점수만 보는 게 아니라 공부 습관까지 봐주는 느낌입니다.”
-            </p>
-            <strong>중2 학부모 C님</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. Trial Form -->
-    <section class="section trial-section" id="trial">
-      <div class="container trial-grid">
-        <div class="trial-copy">
-          <p class="eyebrow">Trial Class</p>
-          <h2>체험수업 및 상담 신청</h2>
-          <p>
-            아이의 현재 학습 상태를 확인한 뒤 적합한 수업 방향을 안내드립니다.
-            신청서를 남겨주시면 샘플 상담 절차에 따라 안내되는 구조입니다.
-          </p>
-
-          <div class="trial-points">
-            <div>
-              <strong>01</strong>
-              <span>학년과 과목 확인</span>
-            </div>
-            <div>
-              <strong>02</strong>
-              <span>체험수업 일정 조율</span>
-            </div>
-            <div>
-              <strong>03</strong>
-              <span>학습 방향 상담</span>
-            </div>
-          </div>
-        </div>
-
-        <form class="consult-form" id="consultForm" novalidate>
-          <div class="form-row">
-            <label for="parentName">학부모 성함</label>
-            <input type="text" id="parentName" name="parentName" placeholder="예: 홍길동" />
-          </div>
-
-          <div class="form-row">
-            <label for="studentGrade">학생 학년</label>
-            <select id="studentGrade" name="studentGrade">
-              <option value="">선택해주세요</option>
-              <option value="초4">초등 4학년</option>
-              <option value="초5">초등 5학년</option>
-              <option value="초6">초등 6학년</option>
-              <option value="중1">중등 1학년</option>
-              <option value="중2">중등 2학년</option>
-              <option value="중3">중등 3학년</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="phone">연락처</label>
-            <input type="tel" id="phone" name="phone" placeholder="예: 010-0000-0000" />
-          </div>
-
-          <div class="form-row">
-            <label for="interest">관심 수업</label>
-            <select id="interest" name="interest">
-              <option value="">선택해주세요</option>
-              <option value="초등 영어">초등 영어</option>
-              <option value="초등 수학">초등 수학</option>
-              <option value="중등 영어">중등 영어</option>
-              <option value="중등 수학">중등 수학</option>
-              <option value="내신 대비">내신 대비</option>
-              <option value="학습 상담">학습 상담</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="message">상담 내용</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="예: 수학 개념이 약하고 숙제를 자주 미룹니다."
-            ></textarea>
-          </div>
-
-          <label class="checkbox-row">
-            <input type="checkbox" id="privacy" name="privacy" />
-            <span>상담 신청을 위한 개인정보 수집 안내를 확인했습니다.</span>
-          </label>
-
-          <button type="submit" class="btn btn-primary full-width">상담 신청 접수하기</button>
-
-          <p class="form-message" id="formMessage" role="status"></p>
-        </form>
-      </div>
-    </section>
-
-    <!-- 9. FAQ -->
-    <section class="section" id="faq">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>자주 묻는 질문</h2>
-          <p>
-            상담 전 학부모님들이 자주 궁금해하시는 내용을 정리했습니다.
-          </p>
-        </div>
-
-        <div class="faq-list">
-          <article class="faq-item">
-            <button type="button" class="faq-question">
-              체험수업은 어떻게 진행되나요?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                먼저 학년과 현재 학습 상태를 확인한 뒤, 아이에게 맞는 수업을 1회 체험할 수 있도록 안내합니다.
-                체험 후에는 수업 태도와 보완이 필요한 부분을 상담해드립니다.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button type="button" class="faq-question">
-              반 배정은 학년 기준인가요?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                학년뿐 아니라 진단 결과, 학교 진도, 개념 이해도, 과제 수행 습관을 함께 보고 반을 안내합니다.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button type="button" class="faq-question">
-              학부모 상담은 자주 가능한가요?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                정기 피드백과 필요 시 개별 상담을 통해 아이의 학습 상황을 공유합니다.
-                상담 방식은 방문, 전화, 메시지 등으로 조율할 수 있습니다.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button type="button" class="faq-question">
-              수업 정원은 몇 명인가요?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                수업별 정원은 샘플 기준 6~8명 내외로 구성되어 있습니다.
-                실제 운영 시 학원 정책에 맞게 수정할 수 있습니다.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. Location -->
-    <section class="section soft-section" id="location">
-      <div class="container location-grid">
-        <div>
-          <p class="eyebrow">Location & Contact</p>
-          <h2>위치 안내 및 상담</h2>
-          <p class="lead-text">
-            방문 상담을 원하시는 경우 상담 신청 후 일정을 조율해드립니다.
-            아래 정보는 포트폴리오용 샘플 정보입니다.
-          </p>
-
-          <div class="contact-card">
-            <div>
-              <strong>주소</strong>
-              <p>서울시 샘플구 서림로 00, 3층</p>
-            </div>
-            <div>
-              <strong>운영 시간</strong>
-              <p>평일 14:00 - 22:00 / 토요일 10:00 - 15:00</p>
-            </div>
-            <div>
-              <strong>상담 안내</strong>
-              <p>전화 상담, 카카오 상담, 방문 상담 가능</p>
-            </div>
-          </div>
-
-          <div class="contact-actions">
-            <button type="button" class="btn btn-primary js-phone-button">전화 상담 버튼</button>
-            <button type="button" class="btn btn-kakao js-kakao-button">카카오 상담 버튼</button>
-          </div>
-        </div>
-
-        <div class="map-placeholder" aria-label="지도 영역">
-          <span>지도 영역 Placeholder</span>
-          <p>실제 제작 시 네이버 지도, 카카오맵, 구글맵 등을 삽입할 수 있습니다.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="mobile-floating-cta" aria-label="모바일 상담 바로가기">
-    <button type="button" class="js-phone-button">전화 상담</button>
-    <a href="#trial">체험 신청</a>
-    <button type="button" class="js-kakao-button">카카오 상담</button>
+    <a href="index.html#trial" class="header-cta">상담 신청</a>
   </div>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>서림에듀학원</strong>
-        <p>초·중등 영어·수학 상담 신청형 홈페이지 샘플</p>
+</header>
+<main>
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow">NOVAEDU ACADEMY</p>
+        <h1>성적보다 먼저,<br /><span>공부가 이어지는 구조</span>를 만듭니다.</h1>
+        <p class="hero-description">노바에듀는 초·중등 학생의 학습 상태를 진단하고, 수업·오답관리·학부모 피드백까지 연결하는 관리형 교육센터입니다. 학부모가 안심하고 상담을 신청할 수 있도록 학원 소개, 캠퍼스 안내, 차량 시간표, 상담 신청 흐름을 한눈에 보여줍니다.</p>
+        <div class="hero-actions">
+          <a href="#trial" class="btn btn-primary">체험수업 신청하기</a>
+          <a href="https://pf.kakao.com/_xhDLjX" target="_blank" rel="noopener" class="btn btn-kakao">카카오톡 문의하기</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>소수정원</strong><span>학생별 이해도 확인</span></div>
+          <div><strong>월간 리포트</strong><span>학부모 피드백 제공</span></div>
+          <div><strong>진단 상담</strong><span>수준별 반 배정</span></div>
+        </div>
       </div>
-      <p class="footer-note">
-        본 페이지는 포트폴리오용 샘플 사이트이며 실제 연락처와 사업장 정보가 아닙니다.
-      </p>
-      <p class="copyright">
-        © <span id="year"></span> Seorim Edu Academy. Portfolio Sample.
-      </p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">About NOVAEDU</p>
+        <h2>아이의 학습 흐름을 함께 관리하는 동네 학원</h2>
+        <p>노바에듀는 단순히 문제를 많이 푸는 학원이 아니라, 아이가 왜 막히는지 확인하고 스스로 공부하는 방법을 익히도록 돕는 학원입니다.</p>
+      </div>
+      <div class="about-grid">
+        <article class="info-card"><span class="card-number">01</span><h3>소수정원 수업</h3><p>학생별 이해도와 과제 수행 상태를 확인할 수 있도록 반별 정원을 제한해 운영합니다.</p></article>
+        <article class="info-card"><span class="card-number">02</span><h3>학부모 피드백</h3><p>수업 태도, 오답 유형, 과제 수행률을 정리해 정기적으로 학부모님께 공유합니다.</p></article>
+        <article class="info-card"><span class="card-number">03</span><h3>기초부터 내신까지</h3><p>초등 기초 개념부터 중등 내신 대비까지 학년별 목표에 맞춘 커리큘럼을 제공합니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section" id="philosophy">
+    <div class="container two-column">
+      <div>
+        <p class="eyebrow">Our Difference</p>
+        <h2>같은 진도보다 중요한 것은 아이에게 맞는 방향입니다.</h2>
+        <p class="lead-text">아이마다 어려워하는 단원, 집중이 흐트러지는 순간, 숙제를 미루는 이유가 다릅니다. 노바에듀는 수업 전후의 학습 데이터를 바탕으로 아이에게 맞는 관리 방식을 제안합니다.</p>
+        <a href="#trial" class="btn btn-primary">우리 아이 상담 신청</a>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><strong>입학 전 진단</strong><p>학년, 과목, 학습 습관을 확인해 적합한 반을 안내합니다.</p></div>
+        <div class="feature-item"><strong>수업 후 오답관리</strong><p>틀린 문제를 유형별로 정리하고 다시 풀 수 있도록 관리합니다.</p></div>
+        <div class="feature-item"><strong>월별 성장 피드백</strong><p>학습 태도와 성취도를 학부모님께 이해하기 쉽게 전달합니다.</p></div>
+        <div class="feature-item"><strong>상담 중심 운영</strong><p>등록 전후로 충분한 상담을 통해 학습 방향을 함께 결정합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="management">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">NOVA 4-Step System</p>
+        <h2>노바에듀 4단계 학습관리 시스템</h2>
+        <p>상담 신청 이후 학부모가 어떤 과정을 거치는지 한눈에 이해할 수 있도록 단계별로 안내합니다.</p>
+      </div>
+      <div class="step-grid">
+        <article class="step-card"><span>01</span><h3>진단 상담</h3><p>학생의 학년, 과목별 어려움, 학습 습관을 확인합니다.</p></article>
+        <article class="step-card"><span>02</span><h3>개념 수업</h3><p>현재 수준에 맞춰 무리 없는 진도와 수업 방식을 제안합니다.</p></article>
+        <article class="step-card"><span>03</span><h3>오답 관리</h3><p>반복 실수와 취약 단원을 유형별로 정리해 다시 확인합니다.</p></article>
+        <article class="step-card"><span>04</span><h3>학부모 피드백</h3><p>수업 태도, 과제 수행률, 성장 포인트를 정리해 공유합니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section" id="process">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Admission Process</p>
+        <h2>상담 후 진행 절차</h2>
+        <p>처음 문의하는 학부모도 안심하고 신청할 수 있도록 상담 이후 흐름을 명확하게 보여줍니다.</p>
+      </div>
+      <ol class="wide-process-list">
+        <li><span>1</span><div><strong>상담 신청</strong><p>폼 또는 카카오 상담 중 편한 방식으로 문의합니다.</p></div></li>
+        <li><span>2</span><div><strong>학습 상태 확인</strong><p>현재 학년, 과목별 고민, 학습 습관을 확인합니다.</p></div></li>
+        <li><span>3</span><div><strong>체험수업 진행</strong><p>아이에게 맞는 반과 수업 방식을 직접 경험합니다.</p></div></li>
+        <li><span>4</span><div><strong>학부모 피드백</strong><p>체험수업 결과와 보완 방향을 안내합니다.</p></div></li>
+        <li><span>5</span><div><strong>반 배정 및 수업 안내</strong><p>수준, 시간표, 캠퍼스 상황에 맞춰 수업을 안내합니다.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="curriculum">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Curriculum</p>
+        <h2>학년과 수준에 맞춘 영어·수학 커리큘럼</h2>
+        <p>기초 개념을 잡는 수업부터 내신 실전 대비까지, 아이의 현재 위치에 맞게 수업 방향을 제안합니다.</p>
+      </div>
+      <div class="curriculum-grid">
+        <article class="curriculum-card"><div class="placeholder-box small"><img class="image-cover" src="assets/images/classroom-lecture.jpg" alt="교실 수업 이미지" /></div><h3>초등 기초 개념반</h3><p>수학 개념 이해와 영어 문장 읽기의 기본기를 다지는 과정입니다.</p><ul><li>연산·개념 정리</li><li>기본 문법과 독해</li><li>학습 습관 형성</li></ul></article>
+        <article class="curriculum-card"><div class="placeholder-box small"><img class="image-cover" src="assets/images/classroom-discussion.jpg" alt="학생 토론 이미지" /></div><h3>초등 심화 사고반</h3><p>응용 문제와 긴 지문 독해를 통해 중등 학습으로 자연스럽게 연결합니다.</p><ul><li>응용 문제 풀이</li><li>문장 구조 이해</li><li>오답노트 훈련</li></ul></article>
+        <article class="curriculum-card"><div class="placeholder-box small"><img class="image-cover" src="assets/images/hero-classroom.jpg" alt="강의실 이미지" /></div><h3>중등 내신 관리반</h3><p>학교별 진도와 시험 범위에 맞춰 개념, 유형, 실전 문제를 관리합니다.</p><ul><li>학교별 시험 범위 분석</li><li>유형별 문제 풀이</li><li>시험 전 집중 관리</li></ul></article>
+        <article class="curriculum-card"><div class="placeholder-box small"><img class="image-cover" src="assets/images/classroom-illustration.png" alt="학원 일러스트 이미지" /></div><h3>중등 실전 완성반</h3><p>실수 패턴을 줄이고 서술형, 고난도 문제까지 대비하는 과정입니다.</p><ul><li>서술형 대비</li><li>고난도 유형 훈련</li><li>개별 약점 보완</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section" id="teachers">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">Teachers</p><h2>아이의 변화를 함께 확인하는 강사진</h2><p>노바에듀의 강사진은 수업 전달뿐 아니라 학생의 태도, 오답, 과제 흐름까지 함께 관리합니다.</p></div>
+      <div class="teacher-grid">
+        <article class="teacher-card"><div class="teacher-photo placeholder-box"><img class="image-cover" src="assets/images/classroom-lecture.jpg" alt="수학 강사 수업 이미지" /></div><div class="teacher-info"><span>수학 / 원장</span><h3>김서연 원장</h3><p>개념 이해와 오답 습관 교정을 중심으로 학생별 학습 방향을 설계합니다.</p></div></article>
+        <article class="teacher-card"><div class="teacher-photo placeholder-box"><img class="image-cover" src="assets/images/classroom-discussion.jpg" alt="영어 강사 수업 이미지" /></div><div class="teacher-info"><span>영어 / 전임</span><h3>박지훈 선생님</h3><p>문법, 독해, 어휘를 연결해 학교 시험과 실제 독해력을 함께 관리합니다.</p></div></article>
+        <article class="teacher-card"><div class="teacher-photo placeholder-box"><img class="image-cover" src="assets/images/hero-classroom.jpg" alt="학습코칭 이미지" /></div><div class="teacher-info"><span>학습코칭</span><h3>이하은 선생님</h3><p>과제 수행, 오답노트, 학습 계획을 점검해 꾸준한 공부 습관을 돕습니다.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="class-time">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">Class & Schedule</p><h2>수업 대상과 시간표</h2><p>아래 시간표는 샘플 구성입니다. 실제 운영 시간은 상담 시 학생의 학년과 수준에 맞춰 안내됩니다.</p></div>
+      <div class="schedule-grid">
+        <article class="schedule-card"><h3>초등 4~6학년</h3><p>기초 개념, 연산, 독해 습관 중심</p><dl><div><dt>월·수</dt><dd>16:00 - 17:30</dd></div><div><dt>화·목</dt><dd>17:00 - 18:30</dd></div></dl></article>
+        <article class="schedule-card"><h3>중등 1~2학년</h3><p>개념 정리, 학교 진도, 기본 내신 대비</p><dl><div><dt>월·수·금</dt><dd>18:00 - 19:30</dd></div><div><dt>화·목</dt><dd>19:00 - 20:30</dd></div></dl></article>
+        <article class="schedule-card"><h3>중등 3학년</h3><p>내신 집중, 서술형, 실전 문제 관리</p><dl><div><dt>월·수·금</dt><dd>20:00 - 21:30</dd></div><div><dt>토요일</dt><dd>10:00 - 12:00</dd></div></dl></article>
+      </div>
+      <div class="notice-box"><strong>안내</strong><p>반 배정은 학년만으로 결정하지 않고, 진단 상담과 체험수업 결과를 함께 보고 안내합니다.</p></div>
+    </div>
+  </section>
+
+  <section class="section soft-section" id="reviews">
+    <div class="container">
+      <div class="section-heading"><p class="eyebrow">Reviews</p><h2>학부모 후기와 성장 사례</h2><p>아래 후기는 포트폴리오용 샘플 문구입니다. 실제 사이트 제작 시 고객사의 실제 후기나 사례로 교체할 수 있습니다.</p></div>
+      <div class="review-grid">
+        <article class="review-card"><p>“문제를 많이 푸는 것보다 어디서 자꾸 틀리는지 알려주셔서 좋았습니다. 아이도 오답노트를 어떻게 써야 하는지 조금씩 익히고 있어요.”</p><strong>중1 학부모 A님</strong></article>
+        <article class="review-card"><p>“숙제를 미루는 편이었는데 주간 체크가 있으니 스스로 챙기는 횟수가 늘었습니다. 상담 때 아이 상태를 구체적으로 설명해주셔서 믿음이 갔습니다.”</p><strong>초6 학부모 B님</strong></article>
+        <article class="review-card"><p>“시험 전에는 어떤 단원을 더 봐야 하는지 정리해주셔서 도움이 됐습니다. 단순히 점수만 보는 게 아니라 공부 습관까지 봐주는 느낌입니다.”</p><strong>중2 학부모 C님</strong></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trial-section" id="trial">
+    <div class="container trial-grid">
+      <div class="trial-copy">
+        <p class="eyebrow">Trial Class</p>
+        <h2>체험수업 및 상담 신청</h2>
+        <p>아이의 현재 학습 상태를 확인한 뒤 적합한 수업 방향을 안내드립니다. 신청서를 남겨주시면 샘플 상담 절차에 따라 안내되는 구조입니다.</p>
+        <div class="trial-points">
+          <div><strong>01</strong><span>학년과 과목 확인</span></div>
+          <div><strong>02</strong><span>체험수업 일정 조율</span></div>
+          <div><strong>03</strong><span>학습 방향 상담</span></div>
+          <div><strong>04</strong><span>희망 상담 방식 선택</span></div>
+        </div>
+      </div>
+
+      <form class="consult-form" id="consultForm" novalidate>
+        <div class="form-grid two-fields">
+          <div class="form-row"><label for="parentName">학부모 성함</label><input type="text" id="parentName" name="parentName" placeholder="예: 홍길동" /></div>
+          <div class="form-row"><label for="studentGrade">학생 학년</label><select id="studentGrade" name="studentGrade"><option value="">선택해주세요</option><option value="초4">초등 4학년</option><option value="초5">초등 5학년</option><option value="초6">초등 6학년</option><option value="중1">중등 1학년</option><option value="중2">중등 2학년</option><option value="중3">중등 3학년</option></select></div>
+        </div>
+        <div class="form-grid two-fields">
+          <div class="form-row"><label for="schoolName">학생 학교</label><input type="text" id="schoolName" name="schoolName" placeholder="예: 샘플중학교" /></div>
+          <div class="form-row"><label for="phone">연락처</label><input type="tel" id="phone" name="phone" placeholder="예: 010-0000-0000" /></div>
+        </div>
+        <div class="form-grid two-fields">
+          <div class="form-row"><label for="interest">관심 수업</label><select id="interest" name="interest"><option value="">선택해주세요</option><option value="초등 영어">초등 영어</option><option value="초등 수학">초등 수학</option><option value="중등 영어">중등 영어</option><option value="중등 수학">중등 수학</option><option value="내신 대비">내신 대비</option><option value="학습 상담">학습 상담</option></select></div>
+          <div class="form-row"><label for="consultType">희망 상담 방식</label><select id="consultType" name="consultType"><option value="">선택해주세요</option><option value="전화 상담">전화 상담</option><option value="카카오 상담">카카오 상담</option><option value="방문 상담">방문 상담</option></select></div>
+        </div>
+        <div class="form-grid two-fields">
+          <div class="form-row"><label for="consultTime">희망 상담 시간</label><input type="text" id="consultTime" name="consultTime" placeholder="예: 평일 오후 6시 이후" /></div>
+          <div class="form-row"><label for="trialWish">체험수업 희망 여부</label><select id="trialWish" name="trialWish"><option value="">선택해주세요</option><option value="희망">희망</option><option value="상담 후 결정">상담 후 결정</option><option value="미희망">미희망</option></select></div>
+        </div>
+        <div class="form-row"><label for="message">현재 고민</label><textarea id="message" name="message" rows="4" placeholder="예: 수학 개념이 약하고 숙제를 자주 미룹니다."></textarea></div>
+        <label class="checkbox-row"><input type="checkbox" id="privacy" name="privacy" /><span>상담 신청을 위한 개인정보 수집 안내를 확인했습니다.</span></label>
+        <button type="submit" class="btn btn-primary full-width">상담 신청 접수하기</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <div class="section-heading"><p class="eyebrow">FAQ</p><h2>자주 묻는 질문</h2><p>상담 전 학부모님들이 자주 궁금해하시는 내용을 정리했습니다.</p></div>
+      <div class="faq-list">
+        <article class="faq-item"><button type="button" class="faq-question">체험수업은 어떻게 진행되나요?<span>+</span></button><div class="faq-answer"><p>먼저 학년과 현재 학습 상태를 확인한 뒤, 아이에게 맞는 수업을 1회 체험할 수 있도록 안내합니다. 체험 후에는 수업 태도와 보완이 필요한 부분을 상담해드립니다.</p></div></article>
+        <article class="faq-item"><button type="button" class="faq-question">반 배정은 학년 기준인가요?<span>+</span></button><div class="faq-answer"><p>학년뿐 아니라 진단 결과, 학교 진도, 개념 이해도, 과제 수행 습관을 함께 보고 반을 안내합니다.</p></div></article>
+        <article class="faq-item"><button type="button" class="faq-question">학부모 상담은 자주 가능한가요?<span>+</span></button><div class="faq-answer"><p>정기 피드백과 필요 시 개별 상담을 통해 아이의 학습 상황을 공유합니다. 상담 방식은 방문, 전화, 메시지 등으로 조율할 수 있습니다.</p></div></article>
+        <article class="faq-item"><button type="button" class="faq-question">차량 운행 시간은 어디서 확인하나요?<span>+</span></button><div class="faq-answer"><p>상단 VEHICLE TIME 메뉴에서 캠퍼스별 차량 시간표를 확인할 수 있습니다. 실제 제작 시 학원별 차량표로 교체하면 됩니다.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft-section" id="location">
+    <div class="container location-grid">
+      <div>
+        <p class="eyebrow">Location & Contact</p>
+        <h2>위치 안내 및 상담</h2>
+        <p class="lead-text">방문 상담을 원하시는 경우 상담 신청 후 일정을 조율해드립니다. 아래 정보는 포트폴리오용 샘플 정보입니다.</p>
+        <div class="contact-card">
+          <div><strong>주소</strong><p>서울시 샘플구 노바로 00, 3층</p></div>
+          <div><strong>운영 시간</strong><p>평일 14:00 - 22:00 / 토요일 10:00 - 15:00</p></div>
+          <div><strong>상담 안내</strong><p>카카오 상담, 방문 상담, 체험수업 신청 가능</p></div>
+        </div>
+        <div class="contact-actions"><a href="#trial" class="btn btn-primary">상담 신청하기</a><a href="https://pf.kakao.com/_xhDLjX" target="_blank" rel="noopener" class="btn btn-kakao">카카오 상담하기</a></div>
+      </div>
+      <div class="map-placeholder" aria-label="지도 영역"><span>지도 영역 Placeholder</span><p>실제 제작 시 네이버 지도, 카카오맵, 구글맵 등을 삽입할 수 있습니다.</p></div>
+    </div>
+  </section>
+</main>
+<div class="floating-contact" aria-label="상담 바로가기">
+  <a class="floating-kakao" href="https://pf.kakao.com/_xhDLjX" target="_blank" rel="noopener">카카오톡 상담하기</a>
+  <a class="floating-trial" href="index.html#trial">상담 신청하기</a>
+</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/images/logo.png" alt="노바에듀 로고" />
+      <div>
+        <strong>NOVAEDU</strong>
+        <p>초·중등 상담 신청형 학원 홈페이지 샘플</p>
+      </div>
+    </div>
+    <p class="footer-note">본 페이지는 포트폴리오용 샘플 사이트이며 실제 연락처, 실제 주소, 실제 학원 정보가 아닙니다.</p>
+    <p class="copyright">© <span id="year"></span> NOVAEDU Academy. Portfolio Sample.</p>
+  </div>
+</footer>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/accordion.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
